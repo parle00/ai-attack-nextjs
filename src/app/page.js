@@ -21,7 +21,7 @@ const Page = () => {
 
   const groupObjects = (objects) => {
     const grouped = [];
-    const minDistance = 75; // Nesneler arasındaki mesafe (bu değeri değiştirerek hassasiyeti artırabilirsiniz)
+    const minDistance = 70; // Nesneler arasındaki mesafe (bu değeri değiştirerek hassasiyeti artırabilirsiniz)
 
     objects.forEach((obj) => {
       let added = false;
@@ -85,7 +85,7 @@ const Page = () => {
 
       // Mavi rengin belirli aralıklarda olup olmadığını kontrol et
       // Bu aralık, kırmızı ve yeşilden mavi rengin daha baskın olduğu pikselleri hedef alır
-      if (blue > 100 && red < 70 && green < 70) {
+      if (blue > 110 && red < 80 && green < 80) {
         const x = (i / 4) % canvas.width;
         const y = Math.floor(i / 4 / canvas.width);
 
